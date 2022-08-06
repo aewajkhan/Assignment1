@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zomato-page-assign-1</title>
+    <style>
+        body {
+            margin: 0px;
+        }
+
+        #container {
+            background-image:
+                linear-gradient(to bottom right,
+                    rgba(157, 14, 14, 0), brown), url(../shutterstock_348320018.png);
+            /* background-image: url(../shutterstock_348320018.png); */
+            width: 100%;
+            height: 600px;
+            background-size: cover;
+
+        }
+
+        .loginTag :hover {
+            background-color: antiquewhite;
+            cursor: pointer;
+
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        #container header {
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+        }
+
+        .loginTag {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: right;
+            margin-right: 20px;
+
+        }
+
+        .loginTag a {
+            color: black;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .loginTag .login,
+        .creat {
+            border: 1px solid grey;
+            margin: 10px;
+            padding: 10px;
+            margin-right: 20px;
+            text-decoration: none;
+            border-radius: 10px;
+        }
+
+        .Logo {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .Logo {
+
+            background-color: white;
+            justify-content: center;
+            font-size: 70px;
+            font-weight: bold;
+            border-radius: 50%;
+            width: 130px;
+            height: 130px;
+            color: red;
+            /* border: 1px solid blue; */
+        }
+
+        .symbol {
+            display: flex;
+            justify-content: center;
+
+        }
+
+        .heading {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            color: aliceblue;
+            font-size: large;
+        }
+
+        .selectTag {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            height: 65px;
+        }
+
+        .selectTag select {
+            width: 300px;
+            border-radius: 20px;
+            border: 0px;
+            font-size: 20px;
+
+        }
+
+        .selectTag .inputTag input {
+            width: 400px;
+            border-radius: 10px;
+            border: 0px;
+            height: 65px;
+            padding-left: 35px;
+            margin-left: 10px;
+        }
+
+        ::placeholder {
+            font-size: 20px;
+        }
+
+        .selectTag .inputTag {
+            position: relative;
+        }
+
+        .selectTag .inputTag img {
+            position: absolute;
+            top: 26px;
+            left: 20px;
+        }
+
+
+        .Quick {
+            margin-left: 100px;
+        }
+
+        .Quick h1 {
+            color: green;
+        }
+
+        span {
+            color: red;
+            font-weight: bold;
+        }
+
+        .Quick p {
+            color: gray;
+        }
+
+        .footer-container {
+            display: flex;
+            flex-wrap: wrap;
+            width: 70%;
+            height: 170px;
+            /* border: 1px solid; */
+            margin: auto;
+            justify-content: space-around;
+        }
+
+        .img-text {
+            display: flex;
+
+            width: 30%;
+            height: 100%;
+            /* border: 1px solid red; */
+            /* margin-left:10px ; */
+        }
+
+        /* @keyframes div {
+            
+                from {
+                    background-color: red;
+                }
+
+                to {
+                    background-color: yellow;
+                }
+            } */
+
+
+        .imageDiv {
+            width: 50%;
+            height: 90%;
+            /* border: 1px solid burlywood; */
+        }
+
+        .imageDiv img {
+            width: 100%;
+            height: 100%;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+
+        }
+
+        .imageDiv img:hover {
+            border-radius: 20px;
+        }
+
+        .textDiv {
+            width: 49%;
+            height: 90%;
+            color: gray;
+            /* border: 1px solid blue; */
+            margin-left: 10px;
+        }
+
+        .textDiv:hover {
+            color: red;
+        }
+
+        .textDiv h3 {
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <div class="loginTag">
+                <div class="login">
+                    <a href="">Login</a>
+                </div>
+                <div class="creat">
+                    <a href="">Creat a new account</a>
+                </div>
+            </div>
+            <br><br><br><br><br><br>
+            <div class="symbol">
+                <div class="Logo">e!</div>
+            </div>
+
+            <div class="heading">
+                <h1>Discover the best food &
+                    drinks in Hingoli</h1>
+            </div>
+
+            <br>
+            <div class="selectTag">
+                <select name="Location">
+                    <option value="">Please select the location</option>
+                    <option value="b">Banglore</option>
+                    <option value="c">Chennai</option>
+                    <option value="M">Mumbai</option>
+                    <option value="H">Hyderabad</option>
+                </select>
+                <div class="inputTag">
+                    <img src="https://tse1.mm.bing.net/th?id=OIP.-9A-FOvJIk9-zy2b0vofXAHaHX&pid=Api&rs=1&c=1&qlt=95&w=122&h=121"
+                        alt="no image found" width="15px" height="15px">
+                    <input type="text" placeholder="search foods" />
+
+                </div>
+            </div>
+        </header>
+    </div>
+    <footer>
+        <div class="Quick">
+            <h1>Quick searches</h1>
+            <p>welcome to <span>Pathan Aewajkhan</span> restaurants</p>
+        </div>
+        <div class="footer-container">
+            <div class="img-text">
+                <div class="imageDiv">
+                    <img src="/shutterstock_1154073754@2x.png" alt="No image">
+                </div>
+                <div class="textDiv">
+                    <h3>Breakfast</h3>
+                    Start your day with exclusive Breakfast
+                </div>
+            </div>
+            <div class="img-text">
+                <div class="imageDiv">
+                    <img src="/shutterstock_351721442@2x.png" alt="No image">
+                </div>
+                <div class="textDiv">
+                    <h3>Lunch</h3>
+                    Start your day with exclusive Lunch
+                </div>
+            </div>
+            <div class="img-text">
+                <div class="imageDiv">
+                    <img src="/shutterstock_305270834@2x.png" alt="No image">
+                </div>
+                <div class="textDiv">
+                    <h3>Special drink</h3>
+                    Start your day with exclusive Special drink
+                </div>
+            </div>
+        </div>
+        <div class="footer-container">
+            <div class="img-text">
+                <div class="imageDiv">
+                    <img src="/shutterstock_476864884@2x.png" alt="No image">
+                </div>
+                <div class="textDiv">
+                    <h3>Special dish</h3>
+                    Start your day with exclusive Special dish
+                </div>
+            </div>
+            <div class="img-text">
+                <div class="imageDiv">
+                    <img src="/shutterstock_1130181932@2x.png" alt="No image">
+                </div>
+                <div class="textDiv">
+                    <h3>Soft dish</h3>
+                    Start your day with exclusive Soft dish
+                </div>
+            </div>
+            <div class="img-text">
+                <div class="imageDiv">
+                    <img src="/shutterstock_1304064250@2x.png" alt="No image">
+                </div>
+                <div class="textDiv">
+                    <h3>Dinner</h3>
+                    Start your day with exclusive Dinner
+                </div>
+            </div>
+        </div>
+
+        </div>
+    </footer>
+</body>
+
+</html>
